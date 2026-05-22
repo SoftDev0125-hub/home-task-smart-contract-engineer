@@ -64,6 +64,7 @@ async function main() {
       marketId,
       outcomeIndex,
       amountETH,
+      0,
       { value: amountETH }
     );
 

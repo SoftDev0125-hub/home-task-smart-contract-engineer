@@ -87,7 +87,7 @@ export function MarketOverviewChart({ marketId, outcomes, totalVolume }: MarketO
                   <XAxis type="number" domain={[0, 100]} tickFormatter={(v) => `${v}%`} />
                   <YAxis type="category" dataKey="name" width={100} />
                   <Tooltip
-                    formatter={(value: number | string) => [`${value}%`, 'Probability']}
+                    formatter={(value) => [`${value ?? 0}%`, 'Probability']}
                     contentStyle={{
                       backgroundColor: '#fff',
                       border: '1px solid #e5e7eb',
